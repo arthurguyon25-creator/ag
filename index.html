@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Le Moon — Bar et Restaurant à Pontarlier</title>
+  <meta name="description" content="Le Moon, bar et restaurant à Pontarlier : cocktails, terrasse, soirées DJ et planches comtoises. Réservez votre table en ligne." />
+  <meta name="theme-color" content="#071219" />
+  <meta property="og:title" content="Le Moon — Bar et Restaurant à Pontarlier" />
+  <meta property="og:description" content="Cocktails, terrasse, soirées DJ. 2 Rue de la Rotonde, 25300 Pontarlier." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Le Moon",
+    "description": "Bar et Restaurant",
+    "telephone": "+33381892318",
+    "priceRange": "10–30 €",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Rue de la Rotonde",
+      "postalCode": "25300",
+      "addressLocality": "Pontarlier",
+      "addressCountry": "FR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Sunday"], "opens": "16:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "16:00", "closes": "01:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "10:00", "closes": "02:00" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "3.8", "reviewCount": "90" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="brand" aria-label="Le Moon, retour à l'accueil">
+        <svg class="brand__moon" viewBox="0 0 64 64" aria-hidden="true"><use href="#moon-symbol" /></svg>
+        <span class="brand__text"><span class="brand__le">Le</span> MOON</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#evenements">Événements</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#infos">Infos</a></li>
+          <li class="nav__cta-item"><a href="#reservation" class="btn btn--gold btn--sm">Réserver</a></li>
+        </ul>
+      </nav>
+
+      <span class="status-pill" data-open-status aria-live="polite"></span>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Symbole lune réutilisable -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <radialGradient id="moonGrad" cx="40%" cy="35%" r="70%">
+        <stop offset="0%" stop-color="#ffffff" />
+        <stop offset="100%" stop-color="#cfd3d6" />
+      </radialGradient>
+      <symbol id="moon-symbol" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="28" fill="url(#moonGrad)" />
+        <circle cx="22" cy="20" r="5" fill="#b9bec2" />
+        <circle cx="40" cy="16" r="3.2" fill="#b9bec2" />
+        <circle cx="44" cy="34" r="6" fill="#b9bec2" />
+        <circle cx="25" cy="40" r="4" fill="#b9bec2" />
+        <circle cx="34" cy="50" r="3" fill="#b9bec2" />
+        <circle cx="14" cy="32" r="2.4" fill="#b9bec2" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="accueil">
+      <div class="hero__stars" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Pontarlier · Haut-Doubs</p>
+          <h1 class="hero__title">
+            <span class="hero__le">Le</span>
+            <span class="hero__moon">MOON</span>
+            <span class="hero__sub">Bar et Restaurant</span>
+          </h1>
+          <p class="hero__lead">
+            Cocktails signature, planches comtoises, terrasse ensoleillée et soirées dansantes jusqu'à 2 h.
+            Le rendez-vous des nuits pontissaliennes.
+          </p>
+          <div class="hero__actions">
+            <a href="#reservation" class="btn btn--gold">Réserver une table</a>
+            <a href="#carte" class="btn btn--ghost">Voir la carte</a>
+          </div>
+          <ul class="hero__chips" data-highlights></ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="moon-big">
+            <svg viewBox="0 0 64 64"><use href="#moon-symbol" /></svg>
+            <span class="moon-big__streak s1"></span>
+            <span class="moon-big__streak s2"></span>
+            <span class="moon-big__streak s3"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="quickbar">
+          <div class="quickbar__item">
+            <span class="quickbar__icon" aria-hidden="true">🕒</span>
+            <div><strong data-open-status-long>…</strong><span data-today-hours></span></div>
+          </div>
+          <div class="quickbar__item">
+            <span class="quickbar__icon" aria-hidden="true">📍</span>
+            <div><strong>2 Rue de la Rotonde</strong><span>25300 Pontarlier</span></div>
+          </div>
+          <div class="quickbar__item">
+            <span class="quickbar__icon" aria-hidden="true">⭐</span>
+            <div><strong><span data-rating-value>3,8</span> / 5</strong><span><span data-rating-count>90</span> avis Google</span></div>
+          </div>
+          <a class="quickbar__item quickbar__item--link" href="tel:+33381892318">
+            <span class="quickbar__icon" aria-hidden="true">📞</span>
+            <div><strong>03 81 89 23 18</strong><span>Appeler le bar</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTE ============ -->
+    <section class="section" id="carte">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">À boire &amp; à grignoter</p>
+          <h2 class="section__title">La carte</h2>
+          <p class="section__lead">De l'apéro au dernier verre. Comptez <strong>10 – 30 € par personne</strong>.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Catégories de la carte" data-menu-tabs></div>
+        <div class="menu-search">
+          <label class="visually-hidden" for="menuSearch">Rechercher dans la carte</label>
+          <input type="search" id="menuSearch" placeholder="Rechercher un cocktail, un plat…" autocomplete="off" />
+        </div>
+        <div class="menu-grid" data-menu-panel role="tabpanel" aria-live="polite"></div>
+        <p class="note">Prix TTC, service compris. Carte susceptible d'évoluer selon les saisons et les arrivages. L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+      </div>
+    </section>
+
+    <!-- ============ ÉVÉNEMENTS ============ -->
+    <section class="section section--alt" id="evenements">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Agenda</p>
+          <h2 class="section__title">Les événements</h2>
+          <p class="section__lead">Afterworks, soirées DJ, quiz… Il se passe toujours quelque chose sous la lune.</p>
+        </header>
+        <div class="events" data-events></div>
+        <p class="note center">Envie d'organiser un anniversaire, un pot de départ ou une soirée privée ?
+          <a href="#reservation" data-prefill-occasion="Privatisation / groupe">Contactez-nous</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ RÉSERVATION ============ -->
+    <section class="section" id="reservation">
+      <div class="container reservation">
+        <div class="reservation__intro">
+          <p class="eyebrow">Réservation</p>
+          <h2 class="section__title">Réservez votre table</h2>
+          <p class="section__lead">En terrasse ou en salle, pour un apéro entre amis ou une grande tablée.
+            Nous confirmons votre réservation dans les plus brefs délais.</p>
+          <ul class="perks">
+            <li>✔ Gratuit et sans engagement</li>
+            <li>✔ Groupes &amp; privatisation sur demande</li>
+            <li>✔ Pour une réservation le jour même, appelez-nous au <a href="tel:+33381892318">03 81 89 23 18</a></li>
+          </ul>
+          <div class="hours-card">
+            <h3>Horaires d'ouverture</h3>
+            <table class="hours-table" data-hours-table></table>
+          </div>
+        </div>
+
+        <form class="card form" id="reservationForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="r-name">Nom *</label>
+              <input id="r-name" name="name" type="text" autocomplete="name" required maxlength="80" />
+            </div>
+            <div class="field">
+              <label for="r-phone">Téléphone *</label>
+              <input id="r-phone" name="phone" type="tel" autocomplete="tel" required pattern="^[0-9 +().-]{10,20}$" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="r-email">E-mail</label>
+            <input id="r-email" name="email" type="email" autocomplete="email" />
+          </div>
+          <div class="form__row form__row--3">
+            <div class="field">
+              <label for="r-date">Date *</label>
+              <input id="r-date" name="date" type="date" required />
+            </div>
+            <div class="field">
+              <label for="r-time">Heure *</label>
+              <select id="r-time" name="time" required disabled>
+                <option value="">Choisir une date</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="r-guests">Personnes *</label>
+              <div class="stepper">
+                <button type="button" data-step="-1" aria-label="Moins de personnes">−</button>
+                <input id="r-guests" name="guests" type="number" min="1" max="40" value="2" inputmode="numeric" required />
+                <button type="button" data-step="1" aria-label="Plus de personnes">+</button>
+              </div>
+            </div>
+          </div>
+          <fieldset class="field">
+            <legend>Emplacement</legend>
+            <div class="segmented">
+              <label><input type="radio" name="area" value="Peu importe" checked /><span>Peu importe</span></label>
+              <label><input type="radio" name="area" value="Salle" /><span>Salle</span></label>
+              <label><input type="radio" name="area" value="Terrasse" /><span>Terrasse</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="r-occasion">Occasion</label>
+            <select id="r-occasion" name="occasion">
+              <option value="">—</option>
+              <option>Apéro entre amis</option>
+              <option>Dîner</option>
+              <option>Anniversaire</option>
+              <option>Afterwork</option>
+              <option>Soirée / événement</option>
+              <option>Privatisation / groupe</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-message">Message</label>
+            <textarea id="r-message" name="message" rows="3" maxlength="500" placeholder="Allergies, gâteau d'anniversaire, chaise bébé…"></textarea>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="consent" required />
+            <span>J'accepte que mes données soient utilisées uniquement pour traiter ma réservation. *</span>
+          </label>
+          <p class="form__error" role="alert" data-form-error></p>
+          <button type="submit" class="btn btn--gold btn--block">Envoyer la demande</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ AVIS ============ -->
+    <section class="section section--alt" id="avis">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">Ils sont passés par là</p>
+          <h2 class="section__title">Les avis</h2>
+        </header>
+
+        <div class="reviews">
+          <div class="card rating-card">
+            <div class="rating-card__score" data-rating-value>3,8</div>
+            <div class="stars stars--lg" data-rating-stars aria-hidden="true"></div>
+            <p><span data-rating-count>90</span> avis sur Google</p>
+            <ul class="tags" data-highlights></ul>
+            <a class="btn btn--ghost btn--block" data-google-reviews target="_blank" rel="noopener">Lire les avis Google ↗</a>
+          </div>
+
+          <div class="reviews__list">
+            <div class="review-grid" data-reviews></div>
+            <p class="reviews__empty" data-reviews-empty>Soyez parmi les premiers à laisser un avis ici !</p>
+          </div>
+        </div>
+
+        <form class="card form review-form" id="reviewForm" novalidate>
+          <h3>Laisser un avis</h3>
+          <div class="form__row">
+            <div class="field">
+              <label for="v-name">Prénom *</label>
+              <input id="v-name" name="author" type="text" required maxlength="40" />
+            </div>
+            <fieldset class="field">
+              <legend>Note *</legend>
+              <div class="star-input" data-star-input>
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 étoiles">★</label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 étoiles">★</label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 étoiles">★</label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 étoiles">★</label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 étoile">★</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="field">
+            <label for="v-text">Votre avis *</label>
+            <textarea id="v-text" name="text" rows="3" required minlength="10" maxlength="600" placeholder="Racontez-nous votre soirée au Moon…"></textarea>
+          </div>
+          <p class="form__error" role="alert" data-form-error></p>
+          <div class="review-form__actions">
+            <button type="submit" class="btn btn--gold">Publier mon avis</button>
+            <a class="btn btn--ghost" data-google-reviews target="_blank" rel="noopener">Noter aussi sur Google ↗</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ INFOS / CONTACT ============ -->
+    <section class="section" id="infos">
+      <div class="container infos">
+        <div class="infos__text">
+          <p class="eyebrow">Nous trouver</p>
+          <h2 class="section__title">Infos pratiques</h2>
+          <dl class="infos__list">
+            <div><dt>Adresse</dt><dd>2 Rue de la Rotonde<br />25300 Pontarlier</dd></div>
+            <div><dt>Téléphone</dt><dd><a href="tel:+33381892318">03 81 89 23 18</a></dd></div>
+            <div><dt>Budget</dt><dd>10 – 30 € par personne</dd></div>
+            <div><dt>Statut</dt><dd data-open-status-long>…</dd></div>
+          </dl>
+          <div class="infos__actions">
+            <a class="btn btn--gold" data-google-maps target="_blank" rel="noopener">Itinéraire ↗</a>
+            <a class="btn btn--ghost" href="tel:+33381892318">Appeler</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            title="Carte : Le Moon, 2 Rue de la Rotonde, Pontarlier"
+            src="https://maps.google.com/maps?q=2%20Rue%20de%20la%20Rotonde%2C%2025300%20Pontarlier&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#accueil" class="brand">
+          <svg class="brand__moon" viewBox="0 0 64 64" aria-hidden="true"><use href="#moon-symbol" /></svg>
+          <span class="brand__text"><span class="brand__le">Le</span> MOON</span>
+        </a>
+        <p class="footer__muted">Bar et Restaurant · Pontarlier</p>
+      </div>
+      <div class="footer__social">
+        <a data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4v2H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>
+        </a>
+        <a data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21 7.6c-.1-1.6-.4-3-1.6-4.1C18.3 2.4 16.9 2 15.3 2H8.7C7.1 2 5.7 2.4 4.6 3.5 3.4 4.6 3.1 6 3 7.6v8.8c.1 1.6.4 3 1.6 4.1 1.1 1.1 2.5 1.5 4.1 1.5h6.6c1.6 0 3-.4 4.1-1.5 1.2-1.1 1.5-2.5 1.6-4.1V7.6zm-2 10.6a3.3 3.3 0 0 1-1.9 1.9c-1.3.5-4.4.4-5.1.4s-3.8.1-5.1-.4a3.3 3.3 0 0 1-1.9-1.9C4.5 16.9 4.6 13.8 4.6 12s-.1-4.9.4-6.2A3.3 3.3 0 0 1 6.9 4c1.3-.5 4.4-.4 5.1-.4s3.8-.1 5.1.4a3.3 3.3 0 0 1 1.9 1.9c.5 1.3.4 4.4.4 6.2s.1 4.9-.4 6.1z"/></svg>
+        </a>
+      </div>
+      <p class="footer__muted footer__legal">© <span data-year></span> Le Moon · L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+    </div>
+  </footer>
+
+  <!-- Barre d'action mobile -->
+  <nav class="mobile-bar" aria-label="Actions rapides">
+    <a href="tel:+33381892318"><span aria-hidden="true">📞</span>Appeler</a>
+    <a href="#carte"><span aria-hidden="true">🍸</span>Carte</a>
+    <a href="#reservation" class="mobile-bar__main"><span aria-hidden="true">📅</span>Réserver</a>
+    <a data-google-maps target="_blank" rel="noopener"><span aria-hidden="true">📍</span>Y aller</a>
+  </nav>
+
+  <!-- Modale de confirmation -->
+  <dialog class="modal" id="confirmModal" aria-labelledby="confirmTitle">
+    <div class="modal__body">
+      <div class="modal__icon" aria-hidden="true">🌙</div>
+      <h3 id="confirmTitle">Demande prête !</h3>
+      <div data-confirm-content></div>
+      <div class="modal__actions" data-confirm-actions></div>
+      <button class="btn btn--ghost btn--block" data-close-modal>Fermer</button>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
